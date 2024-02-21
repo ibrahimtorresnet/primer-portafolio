@@ -1,0 +1,737 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    padding:  0px;
+    box-sizing: content-box;
+    margin:  0;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header {
+    position: fixed;
+    width:  90%;
+    padding:  0.5%  5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:  9%;
+    transition:  5s all;
+    backdrop-filter: blur(30px);
+    background-color: #383838;
+    z-index:  99;
+    box-shadow:  0px  2px  5px rgba(0,  0,  0,  0.589);
+}
+
+
+.navbar a {
+    display: inline-block;
+    font-size:  25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight:  500;
+    margin-left:  35px;
+    transition:  1s;
+}
+
+.navbar a:hover {
+ color:rgb(84, 104, 216) ;
+}
+
+.main {
+    width:  95%;
+    height:  100vh;
+    display: flex;
+}
+
+
+.redes {
+    width:  10%;
+    height:  100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+.portadaIzquierda {
+    width:  40%;
+    height:  100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:  30px;
+    box-sizing: border-box;
+}
+
+.portadaDerecha {
+    width:  40%;
+    height:  100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: moveUpDown  2s infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.portadaDerecha img {
+    width:  100%;
+    height:  60%;
+}
+
+
+.encabezado {
+    margin:  10px;
+}
+
+.portadaIzquierda h1 {
+    font-size:  50px;
+}
+
+.portadaIzquierda h3 {
+    font-size:  35px;
+}
+
+.portadaIzquierda p {
+    font-size:  18px;
+}
+
+
+.aboutMe {
+    width:  100%;
+    text-align: center;
+    padding:  40px;
+    box-sizing: border-box;
+}
+
+.aboutMeLadoIz {
+    width:  30%;
+    height:  70vh;
+    animation: moveUpDown  2s infinite;
+    float: left;
+}
+
+.aboutMeLadoIz img {
+    width:  100%;
+    height:  70vh;
+}
+
+.aboutMeLadoDe {
+    width:  65%;
+    height:  70vh;
+    text-align: center;
+    padding:  30px;
+    float: right;
+    margin:  0;
+    box-sizing: border-box;
+}
+
+.aboutMeLadoDe h3 {
+    font-size:  35px;
+}
+
+.aboutMeLadoDe p {
+    font-size:  18px;
+}
+
+.skill {
+    width:  80%;
+    height:  70px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    float: right;
+}
+
+.skill img {
+    width:  40px;
+    height:  40px;
+    padding:  20px  10px;
+}
+
+.projects {
+    width:  100%;
+    height:  150vh;
+    text-align: center;
+    padding:  40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.contac {
+    text-align: center;
+    width:  100%;
+    height:  90vh;
+    padding:  20px;
+    box-sizing: border-box;
+}
+
+div.galeria {
+    margin:  15px  25px;
+    float: left;
+    width:  28.3%;
+}
+
+.img-gale {
+    width:  100%;
+    height: auto;
+}
+
+.galeria:hover {
+    transform: rotate(3deg);
+    text-shadow:  5px  5px  5px  5px #000;
+}
+
+.galeria img {
+    width:  100%;
+    height:  80%;
+}
+
+
+.pie {
+    text-align: center;
+    text-shadow:  5px  5px  5px purple;
+    padding:  10px;
+}
+
+.pie img {
+    width:  40px;
+    height:  40px;
+}
+
+.redess{display: none;
+  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redess img{
+  width:  50px; 
+  height:  50px; 
+  border-radius:  30%; 
+  transition: transform  0.3s;
+  margin:10px;
+  cursor: pointer;
+ 
+}
+
+
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width:  400px;
+    margin:  0 auto;
+    padding:  20px;
+   
+
+
+  }
+  
+
+  .inputs1 input,
+  .inputs2 input,
+  .inputs3 textarea {
+    margin-bottom:  10px;
+    padding:  10px;
+    border:  1px solid #ccc;
+    border-radius:  3px;
+    font-size:  16px;
+    width:  100%;
+    box-sizing: border-box;
+  }
+  
+
+  .btn {
+    padding:  10px  20px;
+    background-color: #676ba7;
+    color: #fff;
+    border: none;
+    border-radius:  8px;
+    cursor: pointer;
+    transition: background-color  0.3s ease;
+
+  }
+  
+  .btn:hover {
+    background-color: #000000;
+
+  }
+  
+
+  .redes img {
+    width:  50px; 
+    height:  50px;
+    border-radius:  30%; 
+    transition: transform  0.3s; 
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+
+.redes img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:  768px) {
+    .header {
+      width:  100%;
+      padding:  0.5%  2%;
+      display: none;
+    }
+  
+    .navbar a {
+      font-size:  20px;
+      margin-left:  20px;
+    }
+  
+    .main {
+      flex-direction: column;
+    }
+  
+    .redes {
+      width:  100%;
+      height: auto;
+      padding:  20px  0;
+    }
+  
+    .portadaIzquierda, .portadaDerecha {
+      width:  100%;
+      height: auto;
+      padding:  20px;
+    }
+  
+    .aboutMeLadoIz, .aboutMeLadoDe {
+      width:  100%;
+      height: auto;
+      padding:  20px;
+    }
+  
+    .projects {
+      padding:  30px  0;
+    }
+  
+    .contac {
+      padding:  20px  0;
+    }
+  
+    .formulario {
+      flex-direction: column;
+    }
+  
+    .inputs1, .inputs2, .inputs3 {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width:  480px) {
+
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar a {
+      padding:  10px  0;
+    }
+  
+
+  }
+
+@media (max-width:   768px) {
+ 
+  }
+  
+
+
+
+
+  @media only screen and (max-width: 600px) {
+
+
+   
+
+  
+    .navbar a {
+      font-size:   20px;
+      margin-left:   20px;
+    }
+  
+    .main {
+      flex-direction: column;
+    }
+  
+   
+
+   
+    .redes{
+     display: none;
+    }
+
+    .redess{
+      display: flex;
+     }
+ 
+    
+  
+    .portadaIzquierda, .portadaDerecha {
+      width:   100%;
+      height: auto;
+      padding:   20px;
+    }
+  
+    .aboutMeLadoIz, .aboutMeLadoDe {
+      width:   100%;
+      height: auto;
+      padding:   20px;
+    }
+  
+    .projects {
+      padding:   20px   0;
+    }
+  
+    .contac {
+      padding:   20px   0;
+  
+    }
+  
+    .formulario {
+      flex-direction: column;
+      
+    }
+  
+   
+  
+    .skill img {
+      width:   30px;
+      height:   30px;
+    }
+  
+    .galeria {
+      width:   100%;
+    }
+  
+    .img-galeria img {
+      width:   100%;
+      height: auto;
+    }
+  
+    .pie {
+      text-align: center;
+      text-shadow: none;
+      padding:  10px;
+    }
+  
+    .pie img {
+      width:  20px;
+      height:  20px;
+    }
+
+    
+    
+
+  .header a {
+      font-size: 18px;
+  }
+
+  .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar a {
+      font-size: 16px;
+      margin: 10px 0;
+  }
+
+  .inputs1, .inputs2, .inputs3 {
+      flex-direction: column;
+      width: 80%;
+     align-items: center;
+     
+    }
+
+    .navbar a {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    .main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .portadaIzquierda, .portadaDerecha {
+        width: 100%;
+    }
+
+    .aboutMeLadoIz, .aboutMeLadoDe {
+        width: 100%;
+    }
+
+    .skill {
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+
+    h4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    div.galeria {
+        width: 100%;
+
+    }
+
+    .contac{
+        margin-top: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contacto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputs1, .inputs2, .inputs3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        left: 50;
+    }
+    
+
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+   
+    .inputs1, .inputs2, .inputs3 {
+        flex-direction: column;
+        width: 80%;
+       align-items: center;
+       
+      }
+
+      .headerr{display: flex;
+      z-index: 10;}
+
+
+}
+
+
+
+.headerr{display: none;}
+
+
+
+.hamburger {
+  display: none;
+  font-size:  24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.headerr a {
+  font-size:  18px;
+ 
+}
+
+@media (max-width:  768px) {
+  .hamburger {
+      display: block;
+      background-color: #000;
+  }
+  .navbar {
+      display: none;
+    
+  }
+  .navbar.active {
+      display: flex;
+
+  }
+  .headerr a {
+      font-size:  16px;
+  }
+ 
+}
+
+
+
+
+
+.navbar {
+  display: flex;
+
+}
+
+
+@media (max-width:  768px) {
+  .headerr {
+    display: flex;
+    background-color: rgb(100, 100, 100);
+    justify-content: space-between;
+    position: fixed;
+
+    width: 100vw;backdrop-filter: blur(30px);
+
+    
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100vw;
+    height: 100%;
+   
+}
+
+.footer-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: transparent;
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.589);
+    gap: 50%;
+    padding: 1rem 7%;
+}
+
+.footer-text p{
+    font-size: 1rem;
+ 
+    font-weight: 500;
+}
+
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+
+    border-radius: .5rem;
+  
+    outline: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+
+
+.footer-iconTop a ion-icon{
+    font-size: 2rem;
+    color: #000;
+}
+
+@media screen and (max-width: 590px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 456px){
+    .footer-text p{
+        font-size: .8rem;
+        
+        font-weight: 500;
+    }
+
+    .footer-iconTop a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: .2rem;
+   
+        border-radius: .5rem;
+     
+        outline: .2rem solid transparent;
+        transition: .5s ease;
+    }
+    
+}
+
